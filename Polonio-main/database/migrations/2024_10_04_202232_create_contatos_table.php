@@ -19,6 +19,9 @@ class CreateContatosTable extends Migration
             $table->string('email')->unique();
             $table->string('endereco');
             $table->string('telefone');
+            $table->timestamp('updated_at')->nullable();
+            $table->timestamp('created_at')->nullable();
+
         });
     }
 
