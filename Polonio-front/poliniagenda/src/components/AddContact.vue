@@ -12,7 +12,7 @@
           <input v-model="telefone" placeholder="Telefone" required />
         </div>
       </div>
-      <button type="submit">Adicionar</button>
+      <button type="button" @click="addContact">Adicionar</button>
     </form>
   </div>
 </template>
